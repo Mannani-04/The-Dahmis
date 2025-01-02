@@ -1,0 +1,405 @@
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box; /* Assurez-vous que les marges et les paddings ne dépassent pas */
+}
+*{
+    font-family: 'Poppins';
+}
+.slick-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.carousel-inner{
+    height: 750px;
+}
+#circle{
+    position: absolute;
+    bottom:0;
+    left:40%;
+    z-index:2001
+}
+#btnbtn{
+    position: absolute;
+    top:565%;
+    transform: translate(-50%, -50%);
+}
+.navbar-custom {
+    height: 90px;
+  }
+.navbar-toggler{
+    background-color: white;
+}
+#lan{
+    margin-left: 75%;
+}
+#nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute; /* Position absolue pour superposer l'élément */
+    top: 55px; /* Aligner au sommet du carousel */
+    width: 100%; /* Prend toute la largeur */
+    z-index: 5; /* En dessous du carousel si z-index du carousel est supérieur */
+}
+
+.collapse .nav-link{
+    color: white;
+    padding: 20px;
+} 
+#t {
+    width: 170px;
+    height: 250px;
+}
+
+.cc {
+    position: absolute;
+    top: 0; /* Positionne la div au sommet */
+    left: 200px; /* Centre horizontalement */
+    transform: translateX(-50%); /* Centrage horizontal */
+    z-index: 2000; /* Assure que cette div est au-dessus des autres éléments */
+}
+
+.langue,
+.page1,
+.carousel {
+    position: relative; /* Position par défaut des autres sections */
+    z-index: 1; /* Sous l'image */
+}
+
+#maroc{
+    height: 30vh;
+    width: 220px;
+}
+
+
+/* Conteneur principal */
+#entreprise {
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Row styling */
+#entreprise .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Slider styling */
+#entreprise .slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Marquee styling */
+#entreprise .slider marquee {
+    display: flex;
+    align-items: center;
+}
+
+/* Images styling */
+#entreprise .slider img {
+    width: 200px; 
+    height: 150px;
+    border-radius: 10px;
+    margin: 0 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#entreprise .slider img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#btn{
+    width: 50px; /* Largeur du bouton */
+    height: 50px; /* Hauteur égale à la largeur pour un cercle parfait */
+    border-radius: 50%; /* Rend le bouton circulaire */
+    border: none; /* Retire la bordure */
+   position: absolute;
+    margin-top: 385px;
+    margin-left: 285px;
+}
+
+
+
+
+
+
+#divfo{
+    height: 5px;
+    width: 80%;
+    margin: auto; /* Centre horizontalement */
+    position: relative;
+    transform: translateY(-50%); /* Centre verticalement */
+}
+
+/* Rendre le logo responsive */
+.cc img {
+    width: 100%;
+    max-width: 170px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .carousel-inner {
+    height: 115vh;
+  }
+  /* Adapter la hauteur du carousel sur les petits écrans */
+
+  .btn{
+    border-radius: 50%;
+}
+.footer-section{
+    margin-top: 100px;
+}
+.footer-section {
+    padding: 20px;
+}
+.footer-section h5 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+.footer-social-icons a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+.footer-section ul li a:hover {
+    color: #d1d1d1;
+}
+.footer-social-icons a {
+display: inline-flex; /* Pour centrer l'icône à l'intérieur */
+align-items: center;
+justify-content: center;
+border-radius: 50%; /* Forme circulaire */
+margin: 0 10px; /* Espacement entre les icônes */
+font-size: 1rem; /* Taille de l'icône */
+width: 20px; /* Largeur de l'icône circulaire */
+height: 20px; /* Hauteur de l'icône circulaire */
+color: white; /* Couleur du texte/icône */
+}
+
+.footer-contact p, .footer-contact h6 {
+    margin: 0;
+}
+.footer-logo img {
+    width: 100px;
+}
+#imgfot{
+    position: absolute;
+    top:490%;
+    left: 45%;
+}
+#imgval {
+    filter: brightness(0) invert(1);
+}
+
+.valeurs {
+    background-image: url('/dahmis/C.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+.valeurs h1,
+.valeurs p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.valeurs img {
+    max-width: 100px; /* Taille des images pour les icônes */
+    transition: transform 0.3s ease;
+}
+
+.valeurs img:hover {
+    transform: scale(1.1); /* Animation au survol */
+}
+
+.valeurs h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+  @media screen and (max-width: 767px) {
+    /* Réduire la hauteur du carousel pour les petits écrans */
+    #lan {
+        display: flex;
+        flex-direction: row; /* Mettre les éléments en ligne */
+        justify-content: space-between; /* Espacer les éléments */
+        align-items: center; /* Centrer les éléments verticalement */
+        gap: 3px; /* Ajoute un espacement uniforme entre les <li> */
+        margin-left: 65%;
+    }
+    #lan .nav-item {
+        margin: 0 3px; /* Espace horizontal supplémentaire entre les éléments */
+    }
+    #t{
+        display: none;
+    }
+    .carousel-inner {
+      height: 50vh;
+    }
+    #circle{
+        position: absolute;
+        bottom:5%;
+        left:27%;
+        z-index:2001
+    }
+    #maroc{
+        height: 10vh;
+        width: 100px;
+    }
+    #entreprise .slider img{
+        width: 100px;
+        height: 70px;
+    }
+    h1.text {
+        font-size: 24px; /* Diminue légèrement la taille du titre */
+        margin-bottom: 10px; /* Ajoute un espacement en bas */
+    }
+
+    p.text {
+        font-size: 14px; /* Réduit la taille du texte */
+        line-height: 1.5; /* Améliore la lisibilité */
+    }
+
+    h2.text-white {
+        font-size: 18px; /* Réduit la taille du titre sous l'image */
+        margin-top: 10px; /* Ajoute de l'espace au-dessus */
+    }
+    #btn {
+        width: 40px; /* Réduit la taille du bouton sur les petits écrans */
+        height: 40px;
+        margin-top: 380px; /* Ajuste la position du bouton */
+        margin-left: 350px; /* Centre horizontalement sur petits écrans */
+        margin-right: auto;
+        display: block; /* Aligne le bouton sous l'image */
+    }
+
+    .card img {
+        height: auto; /* Ajuste automatiquement la hauteur pour petits écrans */
+        max-width: 100%; /* Empêche les débordements */
+    }
+
+    .card-title {
+        font-size: 16px; /* Réduit la taille de la police pour les petits écrans */
+        text-align: center; /* Centre le texte */
+    }
+
+    h1.text {
+        font-size: 24px; /* Réduit la taille du titre principal */
+    }
+
+    .nouvelle .row {
+        padding: 20px; /* Réduit le padding général */
+    }
+    /* Adapter la taille du logo (image) */
+    .cc img {
+      max-width: 120px; /* Réduire la taille du logo sur mobile */
+    }
+  
+    /* Positionner le nav en haut du carousel sur mobile */
+  
+    /* Barre de navigation en pleine largeur sur mobile */
+    .navbar-nav {
+      text-align: center;
+    }
+    #imgfot{
+        display: none;
+    }
+    .valeurs h1 {
+        font-size: 2rem;
+    }
+
+    .valeurs h2 {
+        font-size: 1.2rem;
+    }
+
+    .valeurs img {
+        max-width: 80px;
+    }
+    #btnbtn{
+        position: absolute;
+        top:1000%;
+        transform: translate(-50%, -50%);
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px)  {
+    #t{
+        display: none;
+    }
+    #maroc{
+        height: 10vh;
+        width: 100px;
+    }
+    #entreprise .slider img{
+        width: 100px;
+        height: 70px;
+    }
+    #imgfot{
+        display: none;
+    }
+    #circle{
+            position: absolute;
+            bottom:0;
+            left:37%;
+            z-index:2001
+    }
+    #btn {
+        width: 40px; /* Réduit la taille du bouton sur les petits écrans */
+        height: 40px;
+        margin-top: 410px; /* Ajuste la position du bouton */
+        margin-left: 200px; /* Centre horizontalement sur petits écrans */
+        margin-right: auto;
+        display: block; /* Aligne le bouton sous l'image */
+    }
+    #btnbtn{
+        position: absolute;
+        top:696%;
+        transform: translate(-50%, -50%);
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1439px)  {
+    #circle{
+            position: absolute;
+            bottom:0;
+            left:41%;
+            z-index:2001
+    }
+    #btn {
+        width: 40px; /* Réduit la taille du bouton sur les petits écrans */
+        height: 40px;
+        margin-top: 390px; /* Ajuste la position du bouton */
+        margin-left: 280px; /* Centre horizontalement sur petits écrans */
+        margin-right: auto;
+        display: block; /* Aligne le bouton sous l'image */
+    }
+    #btnbtn{
+        position: absolute;
+        top:568%;
+        transform: translate(-50%, -50%);
+    }
+  }
+  
